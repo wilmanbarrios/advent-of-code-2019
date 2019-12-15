@@ -34,7 +34,7 @@ func Opcode(program []int) string {
 		}
 	}
 
-	return SplitToString(program, ",")
+	return splitToString(program, ",")
 }
 
 func readFile(file string) string {
@@ -55,7 +55,7 @@ func toInt(s string) int {
 	return n
 }
 
-func SplitToString(a []int, sep string) string {
+func splitToString(a []int, sep string) string {
 	if len(a) == 0 {
 		return ""
 	}
